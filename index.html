@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/reset.css">
+    <link rel="stylesheet" href="./assets/CSS/index/cabecalho.css">
+    <link rel="stylesheet" href="./assets/CSS/index/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
     <title>BX - Bank</title>
   </head>
   <body>
@@ -11,17 +17,18 @@
       <h1 class="cabecalho__texto">BX</h1>
     </header>
 
-    <main>
+    <main class="main-index">
       <form action="" class="formulario" method="POST">
         <h2 class="formulario__titulo">BX</h2>
         <p class="formulario__descricao">Acesse sua conta:</p>
 
        
-            <label for="cpf" class="formulario__label"><input type="number" class="formulario__input" id="cpf" placeholder=" CPF"></label>
-            <label for="n-da-conta" class="formulario__label"><input type="number" class="formulario__input" id="n-da-conta" placeholder="N° da conta"></label>
-            <label for="gravacao"><input type="checkbox" id="gravacao">Gravar dados de acesso</label>
+            <input type="number" class="formulario__input" id="cpf" placeholder=" CPF">
+            <input type="number" class="formulario__input last-input" id="n-da-conta" placeholder="N° da conta" >
+          
+            <label for="gravacao" class="formulario__label"><input type="checkbox" id="gravacao">Gravar dados de acesso</label>
 
-            <label for="botao-entrar"><input type="submit" class="campos__botao" id="botao-entrar" value="Entrar"> </label>
+            <input type="submit" class="campos__botao" id="botao-entrar" value="Entrar" class="formulario__botao">
        
 
       
@@ -29,8 +36,7 @@
           <a href="/" class="formulario__link-itens">Cadastre-se</a>
         
         
-        </fieldset>
-
+      
 
 
 
