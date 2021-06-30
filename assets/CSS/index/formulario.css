@@ -136,3 +136,52 @@
 
 
 }
+
+
+/* Desktop */
+
+
+@media screen and (min-width:1024px) {
+
+    .main-index {
+
+        width: 100%;
+        background-position: center ;
+        background-size: initial;
+
+        
+    }
+
+    .formulario {
+
+
+        width: 40%;
+    }
+
+
+
+    
+}
+
+
+@media screen and (min-width:1300px) {
+
+    .main-index {
+
+        width: 100%;
+        background-position: center ;
+        background-size:120%;
+
+        
+    }
+
+    .formulario {
+
+
+        width: 40%;
+    }
+
+
+
+    
+}
