@@ -1,0 +1,138 @@
+@media screen and (min-width:320px) {
+
+
+.main-index {
+
+    background-color: rgb(236, 236, 188);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(128, 0 , 32);
+    margin: 4rem 2rem 1rem 2rem;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    border-radius: 0.2rem;
+
+
+}
+
+.formulario__titulo {
+
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(236, 205, 30);
+}
+
+.formulario__titulo:first-letter {
+
+    color: white;
+}
+
+
+
+.formulario__descricao {
+
+    margin-bottom: 1rem;
+}
+
+.formulario__input {
+    margin-top: 1rem;
+    width: 90%;
+    border-radius: 0.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.formulario__input.last-input {
+
+    margin-bottom: 1rem;
+}
+
+.formulario__label {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+#botao-entrar {
+
+   background-color: rgb(59, 23, 23) ;
+   border-radius: 1rem;
+   color: white;
+   margin-bottom: 1rem;
+   padding: 0.5rem 0 0.5rem 0;
+    width: 90%;
+
+}
+
+#botao-entrar:hover {
+
+    background-color: rgb(196, 158, 8) ;;
+    cursor: pointer;
+}
+
+.formulario__link-itens {
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(236, 205, 30);
+}
+
+
+}
+
+/* Tablet */
+
+@media screen and (min-width:768px) {
+
+    .main-index {
+
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background: url("/assets/IMG/happygirl.jpg.png") center no-repeat;
+        background-color: rgba(190, 74, 103, 0.5);
+        background-blend-mode: color;
+        background-size:initial;
+
+    }
+
+    .formulario {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        width: 60%;
+        opacity: 85%;
+        background: rgba(172, 171, 165, 0.5);
+        color: black;
+        font-weight: bold;
+    }
+
+
+    .formulario__titulo {
+
+        display: none;
+    }
+    #botao-entrar {
+
+        background:rgb(39, 32, 32)
+    }
+
+
+
+
+
+
+
+}
