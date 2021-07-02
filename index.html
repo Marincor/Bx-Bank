@@ -23,12 +23,13 @@
         <p class="formulario__descricao">Acesse sua conta:</p>
 
        
-            <input type="number" class="formulario__input" id="cpf" placeholder=" CPF">
-            <input type="number" class="formulario__input last-input" id="n-da-conta" placeholder="N° da conta" required >
+            <input type="number" class="formulario__input" id="cpf" placeholder=" CPF" required data-formulario__input-cpf>
+
+            <input type="number" class="formulario__input last-input" id="n-da-conta" placeholder="N° da conta" required  data-formulario__input-conta>
           
             <label for="gravacao" class="formulario__label"><input type="checkbox" id="gravacao">Gravar dados de acesso</label>
 
-            <input type="submit" class="campos__botao" id="botao-entrar" value="Entrar" class="formulario__botao" required>
+            <input type="submit" class="campos__botao" id="botao-entrar" value="Entrar" class="formulario__botao" required data-formulario__botao>
        
 
       
@@ -48,6 +49,6 @@
 
     </main>
 
-    <script type="text/javascript" src="./assets/JS/Formulario.js"></script>
+    <script type="module" src="./assets/JS/Formulario.js"></script>
   </body>
 </html>
