@@ -102,7 +102,7 @@
         display: flex;
         justify-content: center;
         height: calc(100vh - 3rem);
-        background: url("/assets/IMG/happygirl.jpg.png") center no-repeat;
+        background: url("/Bx-Bank/IMG/happygirl.png") center no-repeat;
         background-color: rgba(190, 74, 103, 0.5);
         background-blend-mode: color;
         background-size:initial;
