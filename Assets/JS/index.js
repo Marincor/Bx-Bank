@@ -17,16 +17,22 @@ function botaoClique(evento) {
 
   /* coletor do local storage + regra */
 
-  const cadastro = JSON.parse(window.localStorage.getItem("localCadastro"));
+  const cadastro = JSON.parse(window.localStorage.getItem("localCadastro")) || alert ("Nenhum dado foi encontrado no armazenamento local; clique em cadastre-se para criar um novo usuário");
+ 
+
 
   const buscaCpf = cadastro.find((atributo) => atributo._cpf == valorCpf);
   const buscaConta = cadastro.find((atributo) => atributo._conta == valorConta);
+
+  
+ 
 
   if (buscaConta && buscaCpf) {
     alert("Bem-vindo ao Internet Banking da BX");
 
     window.location.href = "home.html";
-  } else {
+  }
+  else {
     document.querySelector("[data-formulario__input-cpf]").value = "";
     document.querySelector("[data-formulario__input-conta]").value = "";
     alert("os dados informados estão incorretos");
