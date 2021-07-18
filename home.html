@@ -4,10 +4,101 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/CSS/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Assets/CSS/pagina inicial/home.css">
+ 
+  
   <title>BX - Pagina Inicial</title>
 </head>
-<body>
-  <h1>Bem vindo - TESTE</h1>
+<body data-body id="body">
+
+   <header class="header__container">
+     <h1 class="titulo">BX</h1>
+     <a href="#dadosBancarios"><p class="apresenta" data-apresenta></p></a>
+     <a href="./index.html" class="link__sair">Sair</a>
+   </header>
+   <main class="ib">
+    
+
+    
+      <section class="ib__coluna1">
+
+         <label for="depositar" data-ib-depositar>
+         
+            <div class="ib__depositar ib__botoes" > <h2 class="action_tela action_depositar" data-tela-depositar>DEPOSITAR</h2>
+              <img src="./Assets/IMG/cashin.jpg" class="action" alt="">
+             </div> 
+        </label>
+       
+       
+
+        <label for="sacar" data-ib-sacar>
+          <div class="ib__sacar ib__botoes" >
+            <h2 class="action_tela action_sacar" data-tela-sacar>SACAR</h2>
+            <img src="./Assets/IMG/cashout.png"  class="action" alt="">
+          </div>
+        </label>
+       
+       <label for="transferir" data-ib-transferir>
+        <div class="ib__transferir ib__botoes" data-ib-transferir>
+          <h2 class="action_tela action_transferir" data-tela-transferir>TRANSFERIR</h2>
+          <img src="./Assets/IMG/pertoper.png" class="action" alt="">
+        </div>
+       </label>
+      
+
+
+        
+      </section>
+      <section class="ib__coluna2">
+        <input type="checkbox"  class="checkboxDepositar" id="depositar">
+        <div class="ib__depositar-tela" id="tela_depositar">
+            <form action="">
+              <fieldset class="ib__fieldset">
+                <legend class="ib__legend">Depositar</legend> 
+              <input type="number" name="valorD" id="realC" data-real-Depositado  required placeholder="R$" class="campos"/>
+              <input type="submit" value="Depositar" data-botao-depositar class="ib__botao"/>
+            </fieldset>
+            </form>
+        </div>
+        <input type="checkbox" id="sacar" class="checkbox_Sacar">
+        <div class="ib__sacar-tela">
+          <form action="">
+            <fieldset class="ib__fieldset">
+              <legend class="ib__legend">Saque</legend> 
+            <input type="number" name="valorS" id="realD" data-real-saque  required placeholder="R$" class="campos" />
+            <input type="submit" value="Sacar" data-botao-saque class="ib__botao"/>
+          </fieldset>
+          </form>
+        </div>
+        <input type="checkbox" id="transferir" class="checkbox_transferir">
+        <div class="ib__transferir-tela">
+          <form action="">
+            <fieldset class="ib__fieldset-transferir">
+              <legend class="ib__legend">Transferir</legend> 
+            <input type="number" name="valorS" id="realD" data-real-transferir  required placeholder="R$" class="campos" />
+            <input type="number" name="valorS" id="realD" data-conta-transferir  required placeholder="N° da conta"  class="campos" />
+            <input type="submit" value="Transferir" data-botao-transferir class="ib__botao botao__transferir"/>
+          </fieldset>
+          </form>
+        </div>
+      </section>
+      <section class="ib__coluna3" id="dadosBancarios">
+        <div class="ib__conta" id="dadosConta" data-ib__conta></div>
+        <div class="ib__saldo" data-ib__saldo></div>
+      </section>
+
+   </main>
   
+  
+   <script  src="Assets/JS/Home.js"></script>
+   
+   <footer class="footer">
+     <h5 class="codedby">Coded by: <a href="https://github.com/Marincor">Marincor</a></h5>
+   </footer>
 </body>
+
 </html>

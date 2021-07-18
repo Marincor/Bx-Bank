@@ -4,25 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/CSS/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
-    <title>BX - Cadastre-se</title>
+   <link rel="stylesheet" href="./Assets/CSS/cadastro/tela-cadastro.css">
+    <title> BX - Cadastre-se</title>
   </head>
-  <body>
-    <header class="cabecalho">
-      <h1 class="cabecalho__texto">BX</h1>
+  <body class="body">
+    <header class="header">
+     <a href="/index.html" class="link_index"><h1 class="cabecalho__texto">BX</h1></a> 
     </header>
 
     <main class="main-index">
-      <form action="">
-        <fieldset>
-            <legend>Novo Cliente</legend>
-            <input type="text" placeholder="Nome" data-nome>
-            <input type="number" placeholder="CPF" data-cpf> 
-            <input type="number" placeholder="Senha numérica" data-senha>
-            <input type="email" placeholder="seuemail@seudominio.com" data-email>
-            <input type="submit" value="Cadastrar" data-botao-cadastro>
+      <form action="" class="formulario_novo-cliente">
+        <fieldset class="fieldset_novo-cliente">
+            <legend class="novo-cliente">Novo Cliente</legend>
+            <input type="text" placeholder="Nome" data-nome class="campo-cadastro">
+            <input type="number" placeholder="CPF" data-cpf class="campo-cadastro"> 
+            <input type="email" placeholder="seuemail@seudominio.com" data-email class="campo-cadastro">
+            <input type="submit" value="Cadastrar" data-botao-cadastro class="botao-cadastrar">
             
         </fieldset>
       

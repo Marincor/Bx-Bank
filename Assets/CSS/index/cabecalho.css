@@ -1,51 +1,34 @@
-@media screen and (min-width:0) {
-
-    .cabecalho {
-
-        display: none;
-
-    }
-
+@media screen and (min-width: 0) {
+  .cabecalho {
+    display: none;
+  }
 }
-
 
 /* Tablet */
 
+@media screen and (min-width: 768px) {
+  .cabecalho {
+    background-color: rgb(128, 0, 32);
+    display: flex;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+  }
 
-@media screen and (min-width:768px) {
-
-    .cabecalho {
-
-        background-color: rgb(128, 0 , 32);
-        display: flex;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 300;
-        font-size: 2rem;
-    }
-
-    .cabecalho__texto {
-
-    color:rgb(236, 205, 30);
+  .cabecalho__texto {
+    color: rgb(236, 205, 30);
     margin: 0.5rem 0 0.5rem 0.5rem;
+  }
 
-
-    }
-
-    .cabecalho__texto:first-letter {
-
-        color: white;
-    }
-    
+  .cabecalho__texto:first-letter {
+    color: white;
+  }
 }
-
 
 /* Desktop */
 
-@media screen and (min-width:1024px) {
-
-
-    .cabecalho {
-
-        width: 100%;
-    }
+@media screen and (min-width: 1024px) {
+  .cabecalho {
+    width: 100%;
+  }
 }

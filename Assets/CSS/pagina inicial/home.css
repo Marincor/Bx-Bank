@@ -1,0 +1,349 @@
+/* Mobile */
+
+@media screen and (min-width: 375px) {
+  .header__container {
+    background-color: rgb(128, 0, 32);
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100vw;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+    color: rgb(236, 205, 30);
+  }
+  .titulo:first-letter {
+    color: white;
+  }
+
+  .apresenta {
+    color: rgb(221, 205, 205);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .link__sair {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 0 1rem 0;
+    margin-right: 2rem;
+    font-weight: bold;
+  }
+  #body {
+    overflow-x: hidden;
+  }
+
+  .ib {
+    font-family: "Nunito", sans-serif;
+    background-color: rgba(203, 61, 67, 0.2);
+    height: auto;
+    width: 100vw;
+    padding-right: 1rem;
+    background-blend-mode: color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ib__coluna1 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ib__botoes {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-width: 0.1rem;
+    border-color: black;
+    border-style: double;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  .ib__depositar:hover {
+    box-shadow: 0 0 30px rgb(28, 2, 170);
+  }
+  .ib__sacar:hover {
+    box-shadow: 0 0 30px rgb(236, 222, 21);
+  }
+
+  .ib__transferir:hover {
+    box-shadow: 0 0 30px rgb(12, 167, 214);
+  }
+
+  .action {
+    width: 6rem;
+    border-radius: 1rem;
+  }
+
+  .ib__coluna2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+  }
+  .ib__fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .ib__fieldset-transferir {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .campos {
+    background-color: white;
+    padding: 0.2rem;
+    font-size: 1rem;
+    text-align: center;
+    border-color: rgb(128, 0, 32);
+    width: 100%;
+  }
+
+  .ib__botao {
+    width: 100%;
+    background-color: rgb(204, 176, 30);
+    color: black;
+    font-size: 1rem;
+    padding: 0.2rem;
+    font-weight: bold;
+  }
+
+  .botao__transferir {
+    width: 105.1%;
+  }
+
+  .ib__coluna3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 1rem;
+    font-weight: bold;
+    line-height: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .ib__legend {
+    margin: 1rem auto;
+  }
+
+  .footer {
+    font-family: "Nunito", sans-serif;
+    height: auto;
+    width: 100vw;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(226, 180, 31);
+  }
+
+  .codedby {
+    margin: 1rem;
+  }
+
+  .footer a {
+    color: black;
+  }
+
+  .ib__depositar-tela,
+  .ib__sacar-tela,
+  .ib__transferir-tela {
+    display: none;
+  }
+
+  .checkboxDepositar:checked + .ib__depositar-tela {
+    display: flex;
+  }
+  .checkbox_Sacar:checked + .ib__sacar-tela {
+    display: flex;
+  }
+
+  .checkbox_transferir:checked + .ib__transferir-tela {
+    display: flex;
+  }
+
+  .checkboxDepositar,
+  .checkbox_Sacar,
+  .checkbox_transferir {
+    display: none;
+  }
+}
+
+/* Laptop */
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    width: 100vw;
+  }
+
+  #body {
+    overflow-x: hidden;
+  }
+  .ib {
+    width: 100vw;
+    background: linear-gradient(
+      to right,
+      rgb(205, 205, 247) 1%,
+      rgb(245, 239, 239)
+    );
+  }
+  .ib__coluna1 {
+    margin: 0rem;
+  }
+
+  .ib__depositar:hover {
+    box-shadow: none;
+    cursor: initial;
+  }
+  .ib__depositar {
+    margin: 0rem;
+    width: 99.5vw;
+    height: 50vh;
+    padding-top: 10rem;
+    background-image: url("/Assets/IMG/background_cashin.jpg");
+    color: rgb(34, 28, 28);
+    background-color: rgba(241, 195, 207, 0.5);
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 0rem;
+  }
+
+  .action {
+    display: none;
+  }
+
+  .ib__sacar:hover {
+    box-shadow: none;
+    cursor: initial;
+  }
+
+  .ib__sacar {
+    margin: 0rem;
+    width: 99.5vw;
+    height: 50vh;
+    padding-top: 10rem;
+    background-image: url("/Assets/IMG/background_cashout.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 0rem;
+    color: rgb(34, 28, 28);
+    background-color: rgba(241, 195, 207, 0.5);
+    background-blend-mode: color;
+  }
+
+  .ib__transferir:hover {
+    box-shadow: none;
+    cursor: initial;
+  }
+  .ib__transferir {
+    margin: 0rem;
+    width: 99.5vw;
+    height: 50vh;
+    padding-top: 10rem;
+    background-image: url("/Assets/IMG/background_pertoper.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 0rem;
+    color: rgb(34, 28, 28);
+    background-color: rgba(241, 195, 207, 0.5);
+    background-blend-mode: color;
+  }
+
+  .campos {
+    border-radius: 1rem;
+  }
+  .ib__botao {
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+  }
+  .ib__saldo {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .ib__conta {
+    border-style: double;
+    border-width: 0.1rem;
+    border-color: brown;
+    padding: 1rem;
+  }
+
+  .ib__coluna3 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ib__botoes {
+    display: flex;
+    justify-content: center;
+  }
+  .action_tela {
+    text-align: center;
+    margin: 0rem;
+    background-color: rgb(226, 180, 31);
+    width: 50%;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+  .action_depositar:hover {
+    box-shadow: 0 0 15px rgb(143, 241, 140);
+    cursor: pointer;
+  }
+  .action_sacar:hover {
+    box-shadow: 0 0 30px rgb(201, 198, 166);
+    cursor: pointer;
+  }
+
+  .action_transferir:hover {
+    box-shadow: 0 0 15px rgb(79, 82, 224);
+    cursor: pointer;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+  .header__container {
+    width: 100vw;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+  .apresenta {
+    font-size: 1.5rem;
+  }
+
+  .link__sair {
+    font-size: 1.5rem;
+  }
+  #body {
+    overflow-x: hidden;
+  }
+}

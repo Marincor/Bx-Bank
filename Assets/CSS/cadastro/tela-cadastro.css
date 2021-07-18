@@ -1,0 +1,108 @@
+@media screen and (min-width: 0px) {
+  .link_index {
+    text-decoration: none;
+  }
+
+  .header {
+    width: 100vw;
+    background-color: rgb(128, 0, 32);
+    font-family: "Nunito", sans-serif;
+  }
+  .cabecalho__texto {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: rgb(229, 173, 31);
+  }
+
+  .cabecalho__texto:first-letter {
+    color: white;
+  }
+
+  .body {
+    width: 100vw;
+    background-color: rgb(203, 61, 67, 0.5);
+    background-blend-mode: color;
+    overflow-x: hidden;
+  }
+
+  .main-index {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: space-around;
+  }
+  .formulario_novo-cliente {
+    width: 80%;
+    margin: 1rem;
+    background-color: rgba(224, 215, 213, 0.5);
+    background-blend-mode: color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+
+  .fieldset_novo-cliente {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .novo-cliente {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .campo-cadastro {
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+  }
+
+  .botao-cadastrar {
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .body {
+    background-image: url("/Assets/IMG/background_cadastro.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(158, 152, 152, 0.5);
+    background-blend-mode: color;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .body {
+    background-size: cover;
+  }
+
+  .formulario_novo-cliente {
+    width: 50%;
+  }
+
+  .fieldset_novo-cliente {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+  }
+
+  .campo-cadastro {
+    width: 50%;
+  }
+  .botao-cadastrar {
+    width: 52%;
+    padding: 0.5rem;
+  }
+}
