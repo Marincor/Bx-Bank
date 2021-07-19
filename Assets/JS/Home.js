@@ -235,5 +235,5 @@ if (session == dataHora) {
     window.scrollBy(1, 800000);
   }
 } else {
-  window.location.href = "https://bx-bank-lwelf56cl-marincor.vercel.app/index.html";
+  window.location.href = "index.html";
 }
