@@ -20,9 +20,9 @@
       <form action="" class="formulario_novo-cliente">
         <fieldset class="fieldset_novo-cliente">
             <legend class="novo-cliente">Novo Cliente</legend>
-            <input type="text" placeholder="Nome" data-nome class="campo-cadastro">
-            <input type="number" placeholder="CPF" data-cpf class="campo-cadastro"> 
-            <input type="email" placeholder="seuemail@seudominio.com" data-email class="campo-cadastro">
+            <input type="text" placeholder="Nome sobrenome" data-nome class="campo-cadastro">
+            <input type="number" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" data-cpf class="campo-cadastro"> 
+            <input type="email" pattern="[a-z,A-Z,0-9]+@[a-zA-z0-9]+\.com[a-z]*?" placeholder="seuemail@seudominio.com" data-email class="campo-cadastro">
             <input type="submit" value="Cadastrar" data-botao-cadastro class="botao-cadastrar">
             
         </fieldset>

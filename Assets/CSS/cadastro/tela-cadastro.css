@@ -74,16 +74,18 @@
 @media screen and (min-width: 768px) {
   .body {
     background-image: url("/Assets/IMG/background_cadastro.jpg");
+    background-size: 100rem;
     background-repeat: no-repeat;
     background-color: rgb(158, 152, 152, 0.5);
     background-blend-mode: color;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .body {
-    background-size: cover;
+    background-size: 100rem;
   }
 
   .formulario_novo-cliente {
@@ -104,5 +106,14 @@
   .botao-cadastrar {
     width: 52%;
     padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .body {
+
+    background-size: 120rem;
+    overflow-x: hidden;
   }
 }
